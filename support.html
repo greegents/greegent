@@ -3,32 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="XYZ support: install, moves, break-fix, and ESD training." />
-    <title>Support — XYZ</title>
+    <meta name="description" content="Support: install and commissioning, moves and upgrades, break-fix, advice and training." />
+    <title>Support — XYZ Engineering Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body data-page="support">
-    <div class="page-bg" aria-hidden="true"></div>
-
     <header class="site-header">
+      <div class="top-strip">
+        <div class="wrap top-strip-inner">
+          <p class="strip-promise" data-promise>Workplace engineering, delivered</p>
+          <div class="strip-links">
+            <a data-phone-link href="tel:+15550102400"><span data-phone>+1 555 010 2400</span></a>
+            <a data-email-link href="mailto:hello@xyz-solutions.example">Email us</a>
+          </div>
+        </div>
+      </div>
       <div class="wrap header-inner">
         <a class="logo" href="index.html">
           <span class="logo-mark" aria-hidden="true"></span>
-          <span class="logo-text" data-company>XYZ</span>
+          <span class="logo-text"><strong data-company>XYZ</strong><span>Engineering solutions</span></span>
         </a>
-        <a class="btn btn-small header-cta" href="contact.html">Talk to us</a>
+        <div class="header-actions">
+          <a class="header-phone" data-phone-link href="tel:+15550102400"><span data-phone>+1 555 010 2400</span></a>
+          <a class="btn btn-small" href="contact.html">Talk to us</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-tabs" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-      <nav class="tab-bar" aria-label="Site tabs">
+      <nav class="tab-bar" id="site-tabs" aria-label="Site tabs">
         <div class="wrap">
           <ul data-nav>
             <li><a class="tab-link" href="index.html">Home</a></li>
             <li><a class="tab-link" href="services.html">Services</a></li>
+            <li><a class="tab-link" href="industries.html">Industries</a></li>
             <li><a class="tab-link" href="esd.html">ESD Supply</a></li>
             <li><a class="tab-link is-active" href="support.html" aria-current="page">Support</a></li>
             <li><a class="tab-link" href="how-we-work.html">How we work</a></li>
@@ -40,28 +51,74 @@
 
     <main>
       <section class="page-hero">
-        <div class="wrap">
-          <p class="eyebrow">Support</p>
-          <h1>Support that keeps technology moving.</h1>
-          <p class="lede">Install, upgrade, repair, and train. On-site, remote, or a mix that matches how you operate.</p>
+        <div class="wrap page-hero-grid">
+          <div>
+            <p class="eyebrow">Support</p>
+            <h1>The team that built your floor keeps it running.</h1>
+            <p class="lede">Planned work and short-notice fixes, on-site or remote, with one number to call and no handover between strangers.</p>
+          </div>
+          <img data-img="support" src="images/support-install.png" alt="Technicians installing a desk system" />
         </div>
       </section>
+
       <section class="section">
         <div class="wrap">
-          <div class="support-grid" data-support></div>
-          <p class="page-cta">See the sequence on <a href="how-we-work.html">How we work</a>, or reach us on <a href="contact.html">Contact</a>.</p>
+          <div class="card-grid grid-4" data-support></div>
         </div>
       </section>
-      <nav class="section pager-section" aria-label="Page tabs">
+
+      <section class="section section-tint">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Service commitments</p>
+            <h2>What our support actually promises.</h2>
+          </header>
+          <div class="outcome-grid" data-outcomes></div>
+          <p class="page-cta">See the delivery sequence on <a href="how-we-work.html">How we work</a>, or reach us via <a href="contact.html">Contact</a>.</p>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="wrap cta-inner">
+          <div>
+            <h2 data-cta-heading></h2>
+            <p data-cta-text></p>
+          </div>
+          <a class="btn btn-yellow" href="contact.html"><span data-cta-button>Start a conversation</span></a>
+        </div>
+      </section>
+
+      <nav class="pager-section" aria-label="Page navigation">
         <div class="wrap pager" data-pager></div>
       </nav>
     </main>
 
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p><span data-company>XYZ</span> · <span data-legal>XYZ Engineering Solutions</span></p>
-        <ul class="footer-tabs" data-footer-nav></ul>
-        <p data-footer-note></p>
+      <div class="wrap">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <strong data-company>XYZ</strong>
+            <div class="footer-rule"></div>
+            <p data-footer-note></p>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-tabs" data-footer-nav></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <span data-person-name></span>
+              <a data-phone-link href="tel:+15550102400"><span data-phone></span></a>
+              <a data-email-link href="mailto:hello@xyz-solutions.example"><span data-email></span></a>
+              <span data-hours></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span data-year>2026</span> <span data-legal>XYZ Engineering Solutions</span></p>
+          <p><span data-address></span>, <span data-city></span></p>
+        </div>
       </div>
     </footer>
 

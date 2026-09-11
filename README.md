@@ -1,6 +1,6 @@
-# XYZ — static website
+# XYZ Engineering Solutions — static website
 
-Multi-page site for office engineering, desk setup, ESD supply, and support. Ready for GitHub Pages.
+Multi-page, professional-services style site for workplace engineering, desk systems, ESD supply, and support. No build step, no framework — ready for GitHub Pages.
 
 ## Tabs (pages)
 
@@ -8,51 +8,61 @@ Multi-page site for office engineering, desk setup, ESD supply, and support. Rea
 | --- | --- |
 | Home | `index.html` |
 | Services | `services.html` |
+| Industries | `industries.html` |
 | ESD Supply | `esd.html` |
 | Support | `support.html` |
 | How we work | `how-we-work.html` |
 | Contact | `contact.html` |
 
-The tab bar stays on every page. The current tab is highlighted. Use Previous / Next at the bottom to move in order.
+## Edit content (no coding)
 
-## Edit contact and text (no coding)
+Everything a human normally changes lives in **`js/site-config.js`**:
 
-Open **`js/site-config.js`**.
+- `contact.personName`, `contact.phone`, `contact.email`, `contact.address`
+- `companyName`, `promise`, `tagline`, `intro`
+- `stats`, `industries`, `services`, `esdProducts`, `support`, `process`
+- `outcomes`, `differentiators`, `quote`, `cta`
+- `nav` — rename or reorder tabs
+- `images` — swap any photo
 
-Change these first:
+Save the file and refresh the browser.
 
-- `contact.personName`
-- `contact.phone`
-- `contact.email`
-- `companyName`
+## Colour palette
 
-To rename a tab, edit the `nav` list in the same file. Save and refresh.
+Accents follow the professional-services look (PwC / Deloitte / EY inspired) and are defined once at the top of `css/styles.css`:
 
-## Preview on your computer
+| Variable | Value | Used for |
+| --- | --- | --- |
+| `--ink` | `#2E2E38` | Headings, top strip, footer, buttons |
+| `--orange` | `#D04A02` | Primary accent, active tab, links |
+| `--yellow` | `#FFE600` | Highlight blocks and call-to-action button |
+| `--green` | `#86BC25` | Secondary accent |
+| `--blue` | `#0076A8` | Secondary accent |
+| `--red` | `#E0301E` | Occasional accent |
 
-Open `index.html` in a browser, or from this folder run:
+Give any card or step an accent by setting `accent: "orange" | "yellow" | "green" | "blue" | "red"` in `js/site-config.js`.
+
+## Preview locally
+
+Open `index.html` in a browser, or run from this folder:
 
 ```bash
 npx --yes serve .
 ```
 
-Then visit the local URL shown in the terminal.
-
 ## Publish on GitHub Pages
 
-1. Create a GitHub repository and upload this folder (or push with git).
-2. In the repo: **Settings → Pages**.
-3. Source: **Deploy from a branch**.
-4. Branch: `main`, folder: `/ (root)`.
-5. After a minute, the site is live at `https://YOUR-USER.github.io/REPO-NAME/`.
-
-Keep all `.html` files in the repository root.
+1. Push this folder to a GitHub repository (keep all `.html` files in the root).
+2. Repo **Settings → Pages**.
+3. Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
+4. The site goes live at `https://YOUR-USER.github.io/REPO-NAME/`.
 
 ## Files
 
-| File | Purpose |
+| Path | Purpose |
 | --- | --- |
-| `js/site-config.js` | Name, phone, copy, tab labels — edit this |
-| `*.html` | One tab per page |
-| `css/styles.css` | Look and layout |
-| `js/app.js` | Fills pages from the config |
+| `js/site-config.js` | All text, contact details, tabs, photos — edit this |
+| `js/app.js` | Renders the shared nav, cards, and sections |
+| `css/styles.css` | Design system and layout |
+| `images/` | Photography used across the pages |
+| `*.html` | One file per tab |
