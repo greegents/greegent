@@ -3,32 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="XYZ ESD components: mats, grounding, flooring, packaging, and test gear." />
-    <title>ESD Supply — XYZ</title>
+    <meta name="description" content="ESD components: mats, grounding, flooring, packaging, measurement, and replenishment." />
+    <title>ESD Supply — XYZ Engineering Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body data-page="esd">
-    <div class="page-bg" aria-hidden="true"></div>
-
     <header class="site-header">
+      <div class="top-strip">
+        <div class="wrap top-strip-inner">
+          <p class="strip-promise" data-promise>Workplace engineering, delivered</p>
+          <div class="strip-links">
+            <a data-phone-link href="tel:+15550102400"><span data-phone>+1 555 010 2400</span></a>
+            <a data-email-link href="mailto:hello@xyz-solutions.example">Email us</a>
+          </div>
+        </div>
+      </div>
       <div class="wrap header-inner">
         <a class="logo" href="index.html">
           <span class="logo-mark" aria-hidden="true"></span>
-          <span class="logo-text" data-company>XYZ</span>
+          <span class="logo-text"><strong data-company>XYZ</strong><span>Engineering solutions</span></span>
         </a>
-        <a class="btn btn-small header-cta" href="contact.html">Talk to us</a>
+        <div class="header-actions">
+          <a class="header-phone" data-phone-link href="tel:+15550102400"><span data-phone>+1 555 010 2400</span></a>
+          <a class="btn btn-small" href="contact.html">Talk to us</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-tabs" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-      <nav class="tab-bar" aria-label="Site tabs">
+      <nav class="tab-bar" id="site-tabs" aria-label="Site tabs">
         <div class="wrap">
           <ul data-nav>
             <li><a class="tab-link" href="index.html">Home</a></li>
             <li><a class="tab-link" href="services.html">Services</a></li>
+            <li><a class="tab-link" href="industries.html">Industries</a></li>
             <li><a class="tab-link is-active" href="esd.html" aria-current="page">ESD Supply</a></li>
             <li><a class="tab-link" href="support.html">Support</a></li>
             <li><a class="tab-link" href="how-we-work.html">How we work</a></li>
@@ -42,26 +53,86 @@
       <section class="page-hero">
         <div class="wrap">
           <p class="eyebrow">ESD components</p>
-          <h1>Protection for next-generation electronics work.</h1>
-          <p class="lede">Mats, grounding, flooring, packaging, and test gear — specified as a system for benches that cannot risk a static event.</p>
+          <h1>Static control specified as a system.</h1>
+          <p class="lede">Mats, grounding, flooring, packaging, and test gear chosen to work together — with the documentation your auditor will ask for.</p>
         </div>
       </section>
+
       <section class="section">
         <div class="wrap">
-          <div class="product-grid" data-esd></div>
-          <p class="page-cta">Ask for a matched kit on the <a href="contact.html">Contact</a> tab, or see <a href="support.html">Support</a> for install and replenish.</p>
+          <div class="photo-split">
+            <figure class="photo-frame">
+              <img data-img="esdMain" src="images/esd-bench.png" alt="ESD workstation with tools" />
+            </figure>
+            <figure class="photo-frame">
+              <img data-img="esdDetail" src="images/esd-hands.png" alt="Fitting an ESD wrist strap at the bench" />
+            </figure>
+          </div>
         </div>
       </section>
-      <nav class="section pager-section" aria-label="Page tabs">
+
+      <section class="section section-tint">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">Product groups</p>
+            <h2>Everything the bench needs, from one supply list.</h2>
+          </header>
+          <div class="card-grid grid-3" data-esd></div>
+          <p class="page-cta">Need install and replenishment too? See <a href="support.html">Support</a> or ask on the <a href="contact.html">Contact</a> tab.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow">What you get</p>
+            <h2>Compliance you can demonstrate.</h2>
+          </header>
+          <div class="outcome-grid" data-outcomes></div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="wrap cta-inner">
+          <div>
+            <h2 data-cta-heading></h2>
+            <p data-cta-text></p>
+          </div>
+          <a class="btn btn-yellow" href="contact.html"><span data-cta-button>Start a conversation</span></a>
+        </div>
+      </section>
+
+      <nav class="pager-section" aria-label="Page navigation">
         <div class="wrap pager" data-pager></div>
       </nav>
     </main>
 
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p><span data-company>XYZ</span> · <span data-legal>XYZ Engineering Solutions</span></p>
-        <ul class="footer-tabs" data-footer-nav></ul>
-        <p data-footer-note></p>
+      <div class="wrap">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <strong data-company>XYZ</strong>
+            <div class="footer-rule"></div>
+            <p data-footer-note></p>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-tabs" data-footer-nav></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <span data-person-name></span>
+              <a data-phone-link href="tel:+15550102400"><span data-phone></span></a>
+              <a data-email-link href="mailto:hello@xyz-solutions.example"><span data-email></span></a>
+              <span data-hours></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span data-year>2026</span> <span data-legal>XYZ Engineering Solutions</span></p>
+          <p><span data-address></span>, <span data-city></span></p>
+        </div>
       </div>
     </footer>
 
