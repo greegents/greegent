@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
     personName: "Ravi B",
     role: "Solutions Lead",
     phone: "+91 996 414 4782",
-    email: "greegents@gmail.com",
+    email: "sales@gmail.com",
     hours: "Mon–Sat, 8:00–18:00",
     address: "#4,6th Main, Pipe Line Rd, Srinivasa Nagara, Sunkadakatte",
     city: "Bengaluru, KAR 560091",
