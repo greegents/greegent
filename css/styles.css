@@ -168,16 +168,30 @@ p {
   min-height: 76px;
 }
 
-.logo img {
-  height: 50px;
-  width: auto;
-  display: block;
+.logo {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  width: fit-content;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .logo-mark img {
   width: 48px;
   height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   object-fit: contain;
+  display: block;
 }
 
 .header-actions {
