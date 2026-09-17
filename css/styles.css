@@ -168,39 +168,6 @@ p {
   min-height: 76px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-.logo-mark {
-  width: 12px;
-  height: 34px;
-  background: var(--orange);
-  box-shadow: 8px 0 0 var(--yellow), 16px 0 0 var(--green);
-}
-
-.logo-text {
-  display: grid;
-  line-height: 1.2;
-}
-
-.logo-text strong {
-  color: var(--ink);
-  font-size: 1.32rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.logo-text span {
-  color: var(--muted);
-  font-size: 0.74rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .logo img {
   height: 50px;
   width: auto;
