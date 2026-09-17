@@ -168,30 +168,26 @@ p {
   min-height: 76px;
 }
 
+/* ---------- logo ---------- */
 .logo {
   display: flex;
   align-items: center;
-  height: 52px;
-  width: fit-content;
-}
-
-.logo-mark {
-  width: 48px;
-  height: 48px;
-  flex: 0 0 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
   overflow: hidden;
+  text-decoration: none;
 }
 
-.logo-mark img {
-  width: 48px;
-  height: 48px;
-  max-width: 48px;
-  max-height: 48px;
-  object-fit: contain;
+.logo-image {
   display: block;
+  width: 44px;
+  height: 44px;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  flex: 0 0 44px;
 }
 
 .header-actions {
@@ -975,6 +971,19 @@ p {
 }
 
 @media (max-width: 860px) {
+  
+  .logo {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+
+  .logo-image {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+
   .wrap {
     width: calc(100% - 32px);
   }
@@ -1042,6 +1051,20 @@ p {
 
   .quote {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+
+  .logo-image {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
   }
 }
 
