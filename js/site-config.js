@@ -16,9 +16,9 @@ window.SITE_CONFIG = {
 
   /* --- Contact (easy to change) --- */
   contact: {
-    personName: "Ravi B",
-    role: "Solutions Lead",
-    phone: "+91 996 414 4782",
+    personName: "Sales Team",
+    role: "Enquiry",
+    phone: "+91 99018 91009/+91 99019 81009",
     email: "sales@greegent.com",
     hours: "Mon–Sat, 8:00–18:00",
     address: "#4,6th Main, Pipe Line Rd, Srinivasa Nagara, Sunkadakatte",
